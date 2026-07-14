@@ -225,9 +225,7 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/s
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set,voltage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
-$(call soong_config_set,voltage_health,fast_charge_value_none,1)
-$(call soong_config_set,voltage_health,fast_charge_value_fast_charge,0)
+
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
