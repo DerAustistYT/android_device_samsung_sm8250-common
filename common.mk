@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023-2025 The LineageOS Project
+# Copyright (C) 2023-2025 The voltageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -221,13 +221,13 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/sm8250-common:libskeymaster4device)
 
-# Lineage Health
+# voltage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
-$(call soong_config_set,lineage_health,fast_charge_value_none,1)
-$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
+$(call soong_config_set,voltage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
+$(call soong_config_set,voltage_health,fast_charge_value_none,1)
+$(call soong_config_set,voltage_health,fast_charge_value_fast_charge,0)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -242,7 +242,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-voltage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
